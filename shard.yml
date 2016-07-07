@@ -1,0 +1,6 @@
+name: sequel
+version: 0.0.1
+
+dependencies:
+  sqlite3:
+    github: manastech/crystal-sqlite3
