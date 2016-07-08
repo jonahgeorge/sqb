@@ -37,7 +37,8 @@ class Dataset
 
   def where(args : Hash | NamedTuple)
     conditions = args.to_a
-                     .map { |(k, v)| "#{k} = #{escape(v)}" }
+                     .map { |(k, v)| {k, escape(v)} }
+                     .map { |(k, v)| "#{k} = #{v}" }
                      .join(" AND ")
 
     execute where_sql(conditions)
