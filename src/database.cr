@@ -1,3 +1,5 @@
+require "sqlite3"
+
 class Database
   getter conn : SQLite3::Database?
   setter conn : SQLite3::Database?

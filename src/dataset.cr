@@ -53,6 +53,7 @@ class Dataset
   end
 
   private def escape(value : String)
+    value = value.gsub("'", "''")
     "'" + value + "'"
   end
 end

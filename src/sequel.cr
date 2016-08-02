@@ -14,3 +14,4 @@ class Sequel
     end
   end
 end
+
